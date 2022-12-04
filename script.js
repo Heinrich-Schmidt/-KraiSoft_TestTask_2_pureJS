@@ -20,8 +20,6 @@ for(let i = 0; i<500; i++){
     let line = Math.floor(i/250)
     stylesGroups += '.groups #e' + i + '{transform:translate(' + ((i - 50*group) * gap*2 + group*groupWMargin + groupWMargin - 5*groupWMargin*line) + 'px,' + (i - 50*group + line*groupHMargin*2 + groupHMargin) + 'px)}'
     stylesLines += '.lines #e' + i + '{transform:translate(' + ((i - 50*group)*lineWMargin + lineGap)+'px,' + (group*lineHMargin) + 'px)}'
-    //stylesGroups += '.groups #e' + i + '{transform:translate(calc((((('+ (i - 50*group) + ' * (5vw / 48)) + ('+ group + ' * (((100vw - 16px) / 5) - ((((5vw / 48) * 49) + 5vw) / 2)) + (((100vw - 16px) / 5) - ((((5vw / 48) * 49) + 5vw) / 2)) ) - ((5 * (((100vw - 16px) / 5) - ((((5vw / 48) * 49) + 5vw) / 2))) * ' + line + ') ) )))'  + ', calc(('+ (i - 50*group) + ' * (5vw / 96)) + ( (' + line + ' * (((100vh - 16px) / 2) - ((((5vw / 96) * 49) + (5vw * 1.4065)) / 2)) ) + ((((100vh - 16px) / 2) - ((((5vw / 96) * 49) + (5vw * 1.4065)) / 2)) / 2) )) )}'
-    //stylesLines += '#click:checked+#box #e' + i + '{transform:translate(calc(' + '('+ (i - 50*group) + ' * (((100vw - 5vw) - 16px) / 49)' + ')' +'), calc(' + group + ' * ((100vh - (5vw * 1.4065) - 16px) / 9)' + '))}'
     box.append(div)
 }
 let clickFlag = true;
